@@ -13,8 +13,8 @@ This project also gave me a chance to:
 
 ## 🛠️ What's Inside
 
-- `app.py` -  Orchestrates communication between the user, retriever, and LLM..
-- `conversation_memory.py` - Maintains conversation history throughout a session.
+- `app.py` -  Orchestrates communication between the user, retriever, and LLM.
+- `conversation_memory.py` - Maintains conversation history throughout a session (Required since this app uses the OpenAI Chat Completions API not Responses API).
 - `query_refiner.py` - Converts follow-up questions into standalone queries using chat history.
 - `retrieval.py` - Performs semantic search over embedded document chunks in ChromaDB.
 - `llm_client.py` - Initializes the LLM client and formats prompts.
