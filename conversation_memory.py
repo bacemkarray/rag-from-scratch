@@ -1,6 +1,5 @@
 import uuid
 from datetime import datetime
-import json
 
 # In-memory conversation store
 conversations = {}
