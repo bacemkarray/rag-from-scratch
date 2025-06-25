@@ -2,7 +2,7 @@ import chromadb
 from chromadb.utils import embedding_functions
 
 # Initialize ChromaDB client with persistence
-client_db = chromadb.PersistentClient(path="chroma_db")
+chroma_client = chromadb.PersistentClient(path="chroma_db")
 
 # Configure sentence transformer embeddings
 sentence_transformer_ef = embedding_functions.SentenceTransformerEmbeddingFunction(
@@ -10,7 +10,7 @@ sentence_transformer_ef = embedding_functions.SentenceTransformerEmbeddingFuncti
 )
 
 # Create or get existing collection
-collection = client_db.get_or_create_collection(
+collection = chroma_client.get_or_create_collection(
     name="documents_collection",
     embedding_function=sentence_transformer_ef
 )
