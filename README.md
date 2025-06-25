@@ -9,7 +9,7 @@ I’ve used AI tools before, but this was my first time breaking things down at 
 This project also gave me a chance to:
 - Practice **basic modularity** across multiple Python files
 - Explore how conversation memory, query rewriting, and LLM prompting fit into a cohesive loop
-- Understand **why abstraction layers like LangChain exist** — not just for convenience, but to handle real architectural complexity that would otherwise get unwieldy at scale
+- Understand **why abstraction layers like LangChain exist** - not just for convenience, but to handle real architectural complexity that would otherwise get unwieldy at scale
 
 ## 🛠️ What's Inside
 
