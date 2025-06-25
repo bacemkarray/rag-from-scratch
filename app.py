@@ -2,6 +2,10 @@ from retrieval import semantic_search, get_context_with_sources, collection
 from query_refiner import contextualize_query
 from conversation_memory import format_history_for_prompt, add_message, create_session
 from llm_client import generate_response, client
+from utils import process_and_add_documents
+
+MODIFY_DATABASE = False # Set to true if you wish to embed more documents
+FOLDER_PATH = "docs/" # change as needed
 
 def conversational_rag_query(collection, raw_query: str, session_id: str, n_chunks: int = 3):
     """Perform RAG query with conversation history"""
@@ -28,6 +32,9 @@ def conversational_rag_query(collection, raw_query: str, session_id: str, n_chun
 if __name__ == "__main__":
     session = create_session()
     # load or create your chroma collection…
+    if MODIFY_DATABASE:
+        process_and_add_documents(collection, FOLDER_PATH)
+
     while True:
         q = input("You: ")
         resp, src = conversational_rag_query(collection, q, session)
