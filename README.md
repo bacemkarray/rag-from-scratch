@@ -1,6 +1,6 @@
 # RAG From Scratch
 
-This is a **minimal RAG (Retrieval-Augmented Generation)** prototype I built while following [this tutorial](https://github.com/PradipNichite/Youtube-Tutorials/tree/main/Vanilla%20RAG) to understand how tools like ChromaDB, sentence-transformers, and an LLM work together in a local pipeline.
+This is a **minimal RAG (Retrieval-Augmented Generation)** prototype I built to understand how tools like ChromaDB, sentence-transformers, and an LLM work together in a local pipeline.
 
 ## 🧠 Why I Did This
 
